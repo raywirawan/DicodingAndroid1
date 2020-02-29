@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.AboutActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:text="*semua data tentang artist didapat dari laman wikipedia"/>
+    <TextView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Aplikasi ini dibuat oleh"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:textSize="18sp"/>
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_centerHorizontal="true"
+            android:elevation="5dp"
+            android:src="@drawable/pasfoto"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:fontFamily="sans-serif-light"
+        android:text="Ray Wirawan Z King"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif-light"
+        android:text="ray.wirawan@gmail.com"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:text="Ikuti saya di media sosial"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_instagram"
+            android:id="@+id/btn_about_instagram"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_facebook"
+            android:id="@+id/btn_about_facebook"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_twitter"
+            android:id="@+id/btn_about_twitter"
+            />
+        <ImageView
+            android:id="@+id/btn_about_line"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_lineapp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
